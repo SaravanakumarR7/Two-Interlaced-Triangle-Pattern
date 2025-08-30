@@ -10,7 +10,8 @@ for i in range(max_value,max_value - hash,-1):
 
 for i in range(star):
     flag = 0
-    patt = ('-' * (max_value - star + i) + '* ' * (star - i)).strip()
+    star_count = (star - i)
+    patt = ('-' * (max_value - star_count) + '* ' * star_count).strip()
     for j in range(len(patt)):
         if patt_out[i][j] == '#':
             flag = 1
@@ -19,4 +20,5 @@ for i in range(star):
         elif flag == 0:
             patt_out[i][j] = patt[j]
 for i in patt_out:
+
     print("".join(i))
