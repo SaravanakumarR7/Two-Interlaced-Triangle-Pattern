@@ -1,4 +1,4 @@
-star,hash = map(int,input("Input_Size of Star and Hash : ").split())
+star,hash = map(int,input("Input_Size of Star and Hash : ").split())  # Input Must be Always Even
 max_value  = max(star,hash)
 patt_out = [[' '] * (2 * max_value - 1) for _ in range(max_value)]
 
@@ -22,3 +22,4 @@ for i in range(star):
             
 for i in patt_out:
     print("".join(i))
+
