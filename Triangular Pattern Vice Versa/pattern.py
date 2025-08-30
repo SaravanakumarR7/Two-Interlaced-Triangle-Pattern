@@ -19,5 +19,6 @@ for i in range(star):
             patt_out[i][j] = patt[j]
         elif flag == 0:
             patt_out[i][j] = patt[j]
+            
 for i in patt_out:
-    print("".join(i))\
+    print("".join(i))
